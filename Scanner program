@@ -1,0 +1,33 @@
+import java.util.Scanner;
+class ScannerExample{
+    public static void main(String[] args) {
+      Scanner sc= new Scanner(System.in);
+      System.out.println("Enter your mark:");
+      int mark= sc.nextInt();
+      Scanner scanner = new Scanner(System.in);
+      System.out.println("Enter your name");
+      String name= scanner.nextLine();
+
+      if(mark>90){
+        if(mark>95){
+          System.out.println(name + "your are premium plus plus");
+        }
+        else if(mark>92){
+        System.out.println(name + "Your are premium plus");
+        }
+        else{
+          System.out.println(name+ "your are premium");
+        }
+      }
+      else if(mark>10){
+        System.out.println(name + "Your are average" );
+      }
+      else{
+        System.out.println(name + "better to improve");
+      
+      }
+      
+    }
+
+
+}
