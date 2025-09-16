@@ -1,18 +1,18 @@
 import java.util.*;
 class Main {
 	public static void main(String[]args) {
-		String a = "ashwanth";
-		int vowles=0;
-		int consnants=0;
+		String a = "Madhankumar";
+		int vowels=0;
+		int consonants=0;
 		for(char c: a.toCharArray()) {
 			if(Character.isLetter(c)) {
 				if("aeiou".indexOf(c)!=-1) {
-					vowles++;
-					System.out.println("vowles" +vowles);
+					vowels++;
+					System.out.println("vowels" +vowels);
 				}
 				else {
-					consnants++;
-					System.out.println("consnants" + consnants);
+					consonants++;
+					System.out.println("consonants" + consonants);
 				}
 
 			}
