@@ -1,0 +1,43 @@
+public class StringPractice {
+    public static void main(String[]args){
+        String a=" Hello madhan ";
+        String b="Kumar";
+        System.out.println("length:"+ a.length());
+        System.out.println("char "+ b.charAt(2));
+        System.out.println("Saravanan mavanaeee");
+        System.out.println("Lower:"+ a.toUpperCase());
+         System.out.println("Lower:"+ a.toLowerCase());
+         System.out.println("Remove white space:"+a.trim());
+         System.out.println("Substring:" + a.substring(2));
+         System.out.println("Substring start to end:"+ a.substring(2,5));
+         System.out.println("Contains 'World':"+ a.contains("madhan"));
+        System.out.println("Starts with Hello:"+a.startsWith(" Hellow"));
+        System.out.println("Ends with madhan:"+ a.endsWith("madhan"));
+        System.out.println("Equals:"+ b.equals("kumar"));
+        System.out.println("Ignore the case:"+ b.equalsIgnoreCase("KUMAR"));
+        System.out.println("Index check:"+ a.indexOf('e'));
+        System.out.println("last index check:"+ a.lastIndexOf('o'));
+        System.out.println("replace:"+a.replace("Hello","R"));
+        System.out.println("repalce all:"+a.replaceAll(" ",""));
+        
+
+
+        String joined=String.join(" ** ","Ashwanth","Boob","SanjayRahul");
+        System.out.println("Joined"+ joined);
+        String empty="";
+        String blank=" ";
+        System.out.println("Empty:" + empty.isEmpty());
+        System.out.println("Blank:"+ blank.isBlank());
+        char[] chars = a.toCharArray();
+        System.out.print("Char Array: ");
+        for (char c: chars) {
+         System.out.print(c + " ");
+        }
+         System.out.println();
+         int num=100;
+         System.out.println("String value of "+ String.valueOf(num));
+         System.out.println("Repeat 3 times:"+ a.repeat(4));
+
+    }
+    
+}
