@@ -22,7 +22,7 @@ public class StringPractice {
         
 
 
-        String joined=String.join(" ** ","Ashwanth","Boob","SanjayRahul");
+        String joined=String.join(" ** ","Ashwanth","Boobalan","SanjayRahul");
         System.out.println("Joined"+ joined);
         String empty="";
         String blank=" ";
