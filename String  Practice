@@ -1,0 +1,15 @@
+public class PossitionFind {
+    public static void main(String[]args){
+        StringBuffer name=new StringBuffer("Hello Girls"); 
+        name.insert(6,"Boys and ");
+       System.out.println(name);
+       String a=("Madhankumar");
+       String b="an";
+       System.out.println("if an present in Madhankumar print True: " + a.contains(b)); 
+       System.out.println("Index of 'd':"+ a.indexOf('d'));
+       System.out.println(name.reverse());
+       
+
+    }
+    
+}
