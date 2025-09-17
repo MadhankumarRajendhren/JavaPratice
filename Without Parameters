@@ -1,0 +1,17 @@
+class Class{
+    String name;
+    int reg;
+    public void display(){
+        System.out.println("name:"+ name);
+        System.out.println("reg:"+ reg);
+    }
+}
+ public class ClassObject  {
+    public static void main(String[] args) {
+        Class ksr=new Class();
+        ksr.name="Madhan";
+        ksr.reg=90;
+        ksr.display();
+    }
+     
+ }
