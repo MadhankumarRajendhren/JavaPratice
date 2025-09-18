@@ -1,7 +1,7 @@
 import java.util.*;
 class Main {
 	public static void main(String[]args) {
-		String a = "Madhankumar";
+		String a = "Iam a Real Gangstar";
 		int vowels=0;
 		int consonants=0;
 		for(char c: a.toCharArray()) {
