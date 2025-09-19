@@ -1,0 +1,45 @@
+class EvBikes{
+    void EV(){
+        System.out.println("Welcome to the muthu Bhaii EV showroom");
+        System.out.println("We provide best EV bikes");
+
+    }
+}
+class Cars extends EvBikes{
+    void petrol(){
+        System.out.println("Hai guys Iam jamill!");
+        System.out.println("we provide best petrol bikes ");
+    }
+}class EvCars extends Cars{
+    void electric(){
+        System.out.println("We provide best Ev cars ");
+    }
+}class Bikes extends EvCars{
+        void Saravanaa(){
+            System.out.println("Best fisher in world");
+        
+    }
+}
+class Wever extends Bikes{
+    void palani(){
+        System.out.println("Palanii....Palaniii....Selfishhhh");
+    }
+}
+class Sakthii extends Wever{
+    void Store(){
+        System.out.println("sambar..podiii...venumaa..!");
+    }
+}
+public class InheritanceInVechicle {
+    public static void main(String[]args){
+    Sakthii driver=new Sakthii();
+    driver.EV();
+    driver.petrol();
+    driver.electric();
+    driver.Saravanaa();
+    driver.palani();
+    driver.Store();
+
+    }
+    
+}
