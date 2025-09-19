@@ -1,0 +1,25 @@
+class Varadharaj{
+    void land(){
+        System.out.println("millioner Varadharaj");
+
+    }
+}
+class Ananth extends Varadharaj{
+    void property(){
+        System.out.println("future millioner Ananth");
+    }
+}
+class Ashwanth extends Ananth{
+    void propertyOwner(){
+        System.out.println("Naan tha da epa kingguuu Ashwanth");
+    }
+}
+public class InheritancePractice {
+    public static void main(String[]args){
+        Ashwanth king=new Ashwanth();
+        king.land();
+        king.property();
+        king.propertyOwner();
+    }
+    
+}
