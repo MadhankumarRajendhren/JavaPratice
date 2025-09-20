@@ -1,0 +1,30 @@
+abstract class Varadharaj{
+    abstract void thatha();
+    void mama(){
+        System.out.println("Ashwanth mama & thatha");
+
+    }
+}
+class Ananth extends Varadharaj{
+  void thatha(){
+    System.out.println("Ananth mavan");
+  }
+}
+class Ashwanth extends Varadharaj{
+    void thatha(){
+        System.out.println("Ashwanth.....payalugaa");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Varadharaj uncle=new Ananth();
+        uncle.thatha();
+        uncle.mama();
+        Varadharaj mamanar=new Ashwanth();
+        mamanar.thatha();
+        mamanar.mama();
+        
+    }
+}
+    
+
