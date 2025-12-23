@@ -1,0 +1,27 @@
+import java.util.*;
+class Main{
+    public static void main(String[]args){
+        System.out.println("enter the dollar");
+        Scanner sc=new Scanner(System.in);
+        int d1=sc.nextInt();
+        System.out.println("enter the cent");
+        int c1=sc.nextInt();
+        System.out.println("Enter the dollar");
+        int d2=sc.nextInt();
+        System.out.println("Enter the cent");
+        int c2=sc.nextInt();
+        int dollar=d1+d2;
+        int cent=c1+c2;
+        if(cent>=100){
+          dollar=dollar+(cent/100);
+          cent=cent%100;
+          System.out.println("dollar:" + dollar);
+          System.out.println("cent:" + cent);
+        }else{
+            
+            System.out.println("dollar:" + dollar);
+            System.out.println("cent:" + cent);
+        }
+        
+    }
+}
