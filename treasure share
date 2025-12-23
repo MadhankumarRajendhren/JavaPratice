@@ -1,0 +1,18 @@
+class Main {
+    public static void main(String[] args) {
+        int total=2000;
+        int cap=50;
+        int ascap=40;
+        System.out.println("Total amount:"+ total);
+        int capshare= (total*cap)/100;
+        System.out.println("captain share:"+ capshare);
+        int ashar=(capshare*ascap)/100;
+        System.out.println("assistand share:"+ ashar);
+        float sol=(total-(capshare+ashar));
+        float remain=sol/3;
+        System.out.println("share of soldire1:"+ remain);
+        System.out.println("share of soldire2:"+ remain);
+        System.out.println("share of soldire3:"+ remain);
+        
+    }
+}
