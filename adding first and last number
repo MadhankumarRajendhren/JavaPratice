@@ -1,0 +1,17 @@
+import java.util.*;
+class Main{
+    public static void main(String[]args){
+        System.out.println("Enter the 4 number");
+        Scanner sc= new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a<=9999 && a>999){
+            System.out.println("valid number");
+            int first=a/1000;
+            int last=a%10;
+            System.out.println(first+last);
+            
+        }else{
+            System.out.println("invalid");
+        }
+    }
+}
