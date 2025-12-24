@@ -1,10 +1,10 @@
 import java.util.*;
 class Main{
  public static void main(String[]args){
-  int a=5;
-  int b=5;
   Scanner sc=new Scanner(System.in);
   System.out.println("Enter the value");
+  System.out.println("Enter the a");
+  System.out.println("Enter the b");
   int c=sc.nextInt();
     if(c>25){
       System.out.println("invalid number");
