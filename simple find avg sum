@@ -1,0 +1,13 @@
+import java.util.*;
+class Main{
+    public static void main(String[]args){
+        int a=2;
+        int b=4;
+        int c=10;
+        int d=15;
+        float e=(a+c)/2f;
+        float f=(b+d)/2f;
+        System.out.println(e+","+f);
+        
+    }
+}
