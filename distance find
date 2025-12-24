@@ -1,0 +1,14 @@
+import java.util.*;
+class Main{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        int x1=3;
+        int y1=4;
+        int d=x1-x;
+        int d1=y1-y;
+        int dis=(int)Math.sqrt((d*d)+(d1*d1));
+        System.out.println(dis);
+    }
+}
