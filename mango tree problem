@@ -1,0 +1,20 @@
+import java.util.*;
+class Main{
+ public static void main(String[]args){
+  int a=5;
+  int b=5;
+  Scanner sc=new Scanner(System.in);
+  System.out.println("Enter the value");
+  int c=sc.nextInt();
+    if(c>25){
+      System.out.println("invalid number");
+  }
+  else if(c<=b || c%b==0 || c%b==1){
+      System.out.println("It is a mango tree");
+  }
+
+  else{
+      System.out.println("Not a mango tree");
+  }
+ }
+  }
