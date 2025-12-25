@@ -1,0 +1,24 @@
+import java.util.*;
+class Main {
+	public static void main(String[]args) {
+		Scanner sc=new Scanner(System.in);
+		int Totalballs=sc.nextInt();
+		int Totalruns=sc.nextInt();
+		int RunsScored=sc.nextInt();
+		int Ballsbowled=sc.nextInt();
+		int NoofOvers=Totalballs/6;
+		float overf=(float)(Ballsbowled/6)+(Ballsbowled%6)*0.1f;
+		float crr=(float)RunsScored/overf;
+		float trr=(float)Totalruns/NoofOvers;
+		if(crr==trr||crr>trr) {
+			System.out.println("Win");
+		} else {
+			System.out.println("Loss");
+		}
+		System.out.println(NoofOvers+ " No of over");
+		System.out.println(overf+ " over finish");
+		System.out.println(crr+ " Current run rate");
+		System.out.println(trr+ " Total run rate");
+
+	}
+}
