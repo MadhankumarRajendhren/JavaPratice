@@ -1,0 +1,33 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int leap=0;
+		if(a>1990 && a<=9999 && b>=1 && b<=12) {
+			if(a%400==0 && a%100!=0 ||a%4==0) {
+			leap=a;
+			}
+			if(b==2&&leap==a) {
+				System.out.println("29days");
+				return;
+			}
+			else if(b==1||b==3||b==5||b==7||b==10||b==12||b==8) {
+				System.out.println("31 days");
+			}
+			
+			else {
+				System.out.println("30 days");
+			}
+
+		}else if(b==2) {
+				System.out.println("28 days");
+			}
+		else{
+		    System.out.println("0 days");
+		}
+
+	}
+}
