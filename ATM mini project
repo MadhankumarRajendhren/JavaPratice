@@ -43,8 +43,10 @@ class Main{
        }else if(Trans_type==2){
            if(Acctype==1){
                if(Trans_amo>=15000){
-                   double cash=(int)(Trans_amo/Accbal)* 100;
-                   System.out.println(cash);
+                   double cash=(int)(Trans_amo*Accbal)/ 100;
+                   Trans_amo-=cash;
+                   Accbal=Accbal+Trans_amo
+                   System.out.println(Accbal);
                }else{
                    double cash=(int)Trans_amo+Accbal;
                    System.out.println(cash);
