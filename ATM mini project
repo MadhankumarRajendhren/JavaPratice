@@ -45,7 +45,7 @@ class Main{
                if(Trans_amo>=15000){
                    double cash=(int)(Trans_amo*Accbal)/ 100;
                    Trans_amo-=cash;
-                   Accbal=Accbal+Trans_amo
+                   Accbal=Accbal+Trans_amo;
                    System.out.println(Accbal);
                }else{
                    double cash=(int)Trans_amo+Accbal;
