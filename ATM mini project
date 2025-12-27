@@ -7,7 +7,7 @@ class Main{
        System.out.println("Enter the Account typr:\nSaving(1): \n Current(2): ");
        int Acctype=sc.nextInt();
        System.out.println("Account balance:");
-       int Accbal=sc.nextInt();
+       double Accbal=sc.nextInt();
        System.out.println("Enter the transation amount:");
        int Trans_amo=sc.nextInt();
        System.out.println("Enter the transaction type\n withdraw(1) \n deposit(2) \n balance enquiery(3)");
@@ -25,7 +25,7 @@ class Main{
        }
        if(Trans_type==1){
            if(Acctype==1){
-               int cash=Accbal-Trans_amo - 10;
+               double cash=(int)Accbal-Trans_amo - 10;
                if(cash<=1000){
                    System.out.println("Insufficient Balance");
                }else{
@@ -33,7 +33,7 @@ class Main{
                }
            }
            else if(Acctype==2){
-               int cash=(Accbal-Trans_amo)-25;
+               double cash=(int)(Accbal-Trans_amo)-25;
                if(cash<=5000){
                    System.out.println("Insufficient Balance");
                }else{
@@ -43,10 +43,10 @@ class Main{
        }else if(Trans_type==2){
            if(Acctype==1){
                if(Trans_amo>=15000){
-                   int cash=(Trans_amo/Accbal)* 100;
+                   double cash=(int)(Trans_amo/Accbal)* 100;
                    System.out.println(cash);
                }else{
-                   int cash=Trans_amo+Accbal;
+                   double cash=(int)Trans_amo+Accbal;
                    System.out.println(cash);
                }
            }
