@@ -1,0 +1,22 @@
+
+import java.util.*;
+ class Main
+{
+	public static void main(String[] args) {
+		String a="abcde";
+		String b="abe";
+		int i=0;
+		int j=0;
+		while(a.length()-1>=i && b.length()-1>=j){
+		    if(b.charAt(j)==a.charAt(i)){
+		        j++;
+		    }i++;
+		    
+		}
+		if(j==b.length()){
+		    System.out.println("Sub sequence");
+		}else{
+		     System.out.println("Not a Sub sequence");
+		}
+	}
+}
